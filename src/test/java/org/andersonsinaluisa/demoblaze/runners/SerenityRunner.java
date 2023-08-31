@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "org.andersonsinaluisa.demoblaze.stepdefinitions",
-        tags="",
+        tags="@WithOutExamples",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public final class SerenityRunner {

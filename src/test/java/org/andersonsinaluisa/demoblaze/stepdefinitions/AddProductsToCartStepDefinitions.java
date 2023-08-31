@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.andersonsinaluisa.demoblaze.interactions.HomePage;
+import org.andersonsinaluisa.demoblaze.tasks.SearchProduct;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 
@@ -19,6 +20,8 @@ public class AddProductsToCartStepDefinitions {
     private WebDriver theBrowser;
     private Actor actor = Actor.named("Anderson");
     private HomePage homePage = new HomePage();
+    private SearchProduct searchProduct;
+
     @Before
     public void setUp() {
         OnStage.setTheStage(new OnlineCast());
@@ -32,9 +35,10 @@ public class AddProductsToCartStepDefinitions {
         actor.can(BrowseTheWeb.with(theBrowser));
         actor.wasAbleTo(Open.browserOn(homePage));
     }
-    @When("the user adds the first product to the cart")
-    public void theUserAddsTheFirstProductToTheCart() {
+    @When("^the user adds the first product (.*), (.*) to the cart$")
+    public void theUserAddsTheFirstProductToTheCart(String typeProduct,String nameProduct) {
         // Write code here that turns the phrase above into concrete actions
+        actor.wasAbleTo(SearchProduct.withDescripcion(typeProduct,nameProduct));
     }
     @When("the user adds the second product to the cart")
     public void theUserAddsTheSecondProductToTheCart() {

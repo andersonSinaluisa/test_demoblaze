@@ -16,6 +16,8 @@ dependencies {
     testImplementation("io.cucumber:cucumber-junit:7.0.0")
     implementation("net.serenity-bdd:serenity-core:4.0.0-beta-6")
     testImplementation("net.serenity-bdd:serenity-cucumber:4.0.0-beta-6")
+    implementation("net.serenity-bdd:serenity-screenplay:4.0.0-beta-6")
+    implementation("net.serenity-bdd:serenity-screenplay-webdriver:4.0.0-beta-4")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.2")
