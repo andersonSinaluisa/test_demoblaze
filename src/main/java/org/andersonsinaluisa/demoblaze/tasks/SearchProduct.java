@@ -4,8 +4,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.ui.Link;
 import org.andersonsinaluisa.demoblaze.interactions.HomePage;
+import org.andersonsinaluisa.demoblaze.interactions.ListProductsPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -43,8 +43,7 @@ public class SearchProduct implements Task {
         }
 
         actor.attemptsTo(
-                //<a href="prod.html?idp_=1" class="hrefch">Samsung galaxy s6</a>
-                Click.on(Link.withCSSClass("hrefch").containingText(nameProduct))
+                Click.on(ListProductsPage.NAME_PRODUCT.of(nameProduct))
         );
     }
 

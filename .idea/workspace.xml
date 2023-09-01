@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc372edc-dd24-4535-b355-2ff287be37b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/DetailProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/AddProductToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/GoToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/GoToHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/DetailProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/DetailProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/runners/SerenityRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/runners/SerenityRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,26 +72,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/clien/Documents/GitHub/test_demoblaze&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/User/Documents/GitHub/testnttdata/src/main/java/org/andersonsinaluisa/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/clien/Documents/GitHub/test_demoblaze",
+    "onboarding.tips.debug.path": "C:/Users/User/Documents/GitHub/testnttdata/src/main/java/org/andersonsinaluisa/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\GitHub\testnttdata\src\test\resources\webdriver\windows" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SerenityRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Add Products to Cart">
     <configuration name="Feature: AddProductsToCart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" />
@@ -205,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SerenityRunner" />
         <item itemvalue="Cucumber Java.Scenario: Add Products to Cart" />
+        <item itemvalue="JUnit.SerenityRunner" />
         <item itemvalue="Cucumber Java.Feature: AddProductsToCart" />
         <item itemvalue="Gradle.testnttdata [buildNeeded]" />
         <item itemvalue="Gradle.testnttdata [buildDependents]" />
@@ -223,5 +226,21 @@
       <updated>1693431636399</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/runners/SerenityRunner.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/runners/SerenityRunner.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

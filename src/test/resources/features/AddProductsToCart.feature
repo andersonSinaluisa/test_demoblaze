@@ -10,22 +10,23 @@ Feature: Add Products to Cart
   @WithOutExamples
   Scenario: Add Products to Cart
     Given the user is on the home page
-    When the user adds the first product LAPTOP, Sony vaio i7  to the cart
-    And the user adds the second product to the cart
+    When the user adds the first product LAPTOP, Sony vaio i7 to the cart
+    And the user adds the second product PHONE, Nokia lumia 1520 to the cart
     Then the user should see that the products are in the cart
 
   @WithExamples
   Scenario Outline: Add Products to Cart
     Given the user is on the home page
     When the user adds the first product to the cart
-      | <tipo> |
+      | <tipo> | <producto> |
     And the user adds the second product to the cart
+      | <tipo> | <producto> |
     Then the user should see that the products are in the cart
 
 
     Examples:
-      | tipo    | producto    | cantidad |
-      | PHONE   | iPhone 11   | 1        |
-      | LAPTOP  | MacBook Pro | 2        |
-      | MONITOR | LG          | 3        |
+      | tipo    | producto    |
+      | PHONE   | iPhone 11   |
+      | LAPTOP  | MacBook Pro |
+      | MONITOR | LG          |
 
