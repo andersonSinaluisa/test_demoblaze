@@ -1,30 +1,18 @@
 package org.andersonsinaluisa.demoblaze.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class Person {
-    @Getter
-    @Setter
+
     private String name;
 
-    @Getter
-    @Setter
     private String country;
 
-    @Getter
-    @Setter
     private String city;
 
-    @Getter
-    @Setter
     private String creditCard;
 
-    @Getter
-    @Setter
+
     private String month;
-    @Getter
-    @Setter
+
     private String year;
 
     public Person(String name, String country, String city, String creditCard, String month, String year) {
@@ -34,5 +22,29 @@ public class Person {
         this.creditCard = creditCard;
         this.month = month;
         this.year = year;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getCountry(){
+        return this.country;
+    }
+
+    public String getCity(){
+        return this.city;
+    }
+
+    public String getCreditCard(){
+        return this.creditCard;
+    }
+
+    public String getMonth(){
+        return this.month;
+    }
+
+    public String getYear(){
+        return this.year;
     }
 }

@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc372edc-dd24-4535-b355-2ff287be37b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/AddProductToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/GoToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/GoToHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/DetailProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/DetailProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
