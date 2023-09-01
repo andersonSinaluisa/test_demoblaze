@@ -23,12 +23,16 @@ public class PayOrder implements Task {
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-                Click.on(CartPage.PAY_BUTTON)
-        );
+
         actor.attemptsTo(
                 //write in the input name
-                Enter.theValue(person.getName()).into(CartPage.INPUT_NAME)
+                Enter.theValue(person.getName()).into(CartPage.INPUT_NAME),
+                Enter.theValue(person.getCountry()).into(CartPage.INPUT_COUNTRY),
+                Enter.theValue(person.getCity()).into(CartPage.INPUT_CITY),
+                Enter.theValue(person.getCreditCard()).into(CartPage.INPUT_CREDIT_CARD),
+                Enter.theValue(person.getMonth()).into(CartPage.INPUT_MONTH),
+                Enter.theValue(person.getYear()).into(CartPage.INPUT_YEAR),
+                Click.on(CartPage.PURCHASE_BUTTON)
 
         );
 

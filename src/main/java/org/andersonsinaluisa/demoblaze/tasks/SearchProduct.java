@@ -43,7 +43,10 @@ public class SearchProduct implements Task {
         }
 
         actor.attemptsTo(
-                Click.on(ListProductsPage.NAME_PRODUCT.of(nameProduct))
+                Click.on(ListProductsPage.NAME_PRODUCT_LINKS.find(
+                        ListProductsPage.NAME_PRODUCT.of(nameProduct)
+                ))
+
         );
     }
 
