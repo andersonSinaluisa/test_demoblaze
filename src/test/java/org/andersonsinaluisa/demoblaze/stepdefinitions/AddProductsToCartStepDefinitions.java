@@ -1,6 +1,7 @@
 package org.andersonsinaluisa.demoblaze.stepdefinitions;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,10 +13,8 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.andersonsinaluisa.demoblaze.interactions.CartPage;
 import org.andersonsinaluisa.demoblaze.interactions.HomePage;
-import org.andersonsinaluisa.demoblaze.tasks.AddProductToCart;
-import org.andersonsinaluisa.demoblaze.tasks.GoToCart;
-import org.andersonsinaluisa.demoblaze.tasks.GoToHome;
-import org.andersonsinaluisa.demoblaze.tasks.SearchProduct;
+import org.andersonsinaluisa.demoblaze.model.Person;
+import org.andersonsinaluisa.demoblaze.tasks.*;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 
@@ -31,7 +30,7 @@ public class AddProductsToCartStepDefinitions {
     private WebDriver theBrowser;
     private Actor actor = Actor.named("Anderson");
     private HomePage homePage = new HomePage();
-    private SearchProduct searchProduct;
+    private Person person;
 
     @Before
     public void setUp() {
@@ -85,4 +84,29 @@ public class AddProductsToCartStepDefinitions {
         actor.should(seeThat(the(CartPage.NAME_PRODUCT),isPresent()));
     }
 
+    @When("the user place the order")
+    public void theUserPlaceTheOrder() {
+        actor.wasAbleTo(PlaceOrder.go());
+    }
+
+    @And("the user fills the form with the following data")
+    public void theUserFillsTheFormWithTheFollowingData(DataTable data) {
+        person = new Person(
+                data.row(0).get(0),
+                data.row(0).get(1),
+                data.row(0).get(2),
+                data.row(0).get(3),
+                data.row(0).get(4),
+                data.row(0).get(5)
+        );
+
+        actor.wasAbleTo(PayOrder.withData(person));
+
+
+    }
+
+    @Then("the user should see the message {string}")
+    public void theUserShouldSeeTheMessage(String arg0) {
+        actor.should(seeThat(the(CartPage.TEXT_SUCCESS_MODAL),isPresent()));
+    }
 }

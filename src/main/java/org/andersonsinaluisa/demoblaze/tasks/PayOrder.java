@@ -23,9 +23,7 @@ public class PayOrder implements Task {
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-                Click.on(CartPage.PAY_BUTTON)
-        );
+
         actor.attemptsTo(
                 //write in the input name
                 Enter.theValue(person.getName()).into(CartPage.INPUT_NAME),
@@ -33,8 +31,8 @@ public class PayOrder implements Task {
                 Enter.theValue(person.getCity()).into(CartPage.INPUT_CITY),
                 Enter.theValue(person.getCreditCard()).into(CartPage.INPUT_CREDIT_CARD),
                 Enter.theValue(person.getMonth()).into(CartPage.INPUT_MONTH),
-                Enter.theValue(person.getYear()).into(CartPage.INPUT_YEAR)
-                //*[@id="orderModal"]/div/div/div[3]/button[2]
+                Enter.theValue(person.getYear()).into(CartPage.INPUT_YEAR),
+                Click.on(CartPage.PURCHASE_BUTTON)
 
         );
 

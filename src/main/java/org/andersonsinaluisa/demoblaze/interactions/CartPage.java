@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 public class CartPage {
 
     public static final Target NAME_PRODUCT
-            = Target.the("Name Product").locatedBy("//*[@id=\"tbodyid\"]/tr/td[starts-with(text(),'{0}')]]");
-    public static final Target PAY_BUTTON = Target.the("Pay Button").locatedBy("//button[starts-with(text(),'Play Order')]");
+            = Target.the("Name Product").located(By.className("success"));
+    public static final Target PAY_BUTTON = Target.the("Pay Button").locatedBy("//button[starts-with(text(),'Place Order')]");
 
 
     public static final Target INPUT_NAME = Target.the("Input Name").located(By.id("name"));
@@ -21,5 +21,9 @@ public class CartPage {
     public static final Target INPUT_MONTH = Target.the("Input Month").located(By.id("month"));
 
     public static final Target INPUT_YEAR = Target.the("Input Year").located(By.id("year"));
+
+    public static final Target PURCHASE_BUTTON = Target.the("Purchase Button").locatedBy("//button[starts-with(text(),'Purchase')]");
+
+    public static final Target TEXT_SUCCESS_MODAL = Target.the("Text Success Modal").locatedBy("//h2[starts-with(text(),'Thank you for your purchase!')]");
 
 }
