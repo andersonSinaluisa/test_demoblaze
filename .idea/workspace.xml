@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc372edc-dd24-4535-b355-2ff287be37b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PlaceOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/interactions/ListProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/PayOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/andersonsinaluisa/demoblaze/tasks/SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/andersonsinaluisa/demoblaze/stepdefinitions/AddProductsToCartStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/webdriver/windows/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/webdriver/windows/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -81,10 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\clien\Documents\GitHub\test_demoblaze\src\test\resources\webdriver\windows" />
       <recent name="C:\Users\User\Documents\GitHub\testnttdata\src\test\resources\webdriver\windows" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Add Products to Cart">
+  <component name="RunManager" selected="JUnit.SerenityRunner">
     <configuration name="Feature: AddProductsToCart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddProductsToCart.feature" />
@@ -201,8 +202,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Add Products to Cart" />
         <item itemvalue="JUnit.SerenityRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Add Products to Cart" />
         <item itemvalue="Cucumber Java.Feature: AddProductsToCart" />
         <item itemvalue="Gradle.testnttdata [buildNeeded]" />
         <item itemvalue="Gradle.testnttdata [buildDependents]" />
