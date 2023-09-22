@@ -24,10 +24,10 @@ git clone https://github.com/andersonSinaluisa/test_demoblaze.git
 
 3. Abre la ventana de settings (Ctrl + Alt + S).
 4. Dirígete a Build, Execution, Deployment > Build Tools > Gradle.
-5. Selecciona en Gradle JVM la versión 17 de Java.
-6. Haz clic en Apply y luego en OK.
-7. Haz clic en el botón de "Play" en la parte superior derecha de la ventana de Gradle.
-8. Selecciona la opción de "Refresh all Gradle projects".
+5. Selecciona en Gradle JVM la versión 17 de Java y establece la ejecución de la prueba en "Ejecutar pruebas con IntelliJ IDEA".
+7. Haz clic en Apply y luego en OK.
+8. Haz clic en el botón de "Play" en la parte superior derecha de la ventana de Gradle.
+9. Selecciona la opción de "Refresh all Gradle projects".
    Esto descargará todas las dependencias del proyecto.
 
 ## 3. Instrucciones para Ejecutar los Tests:
